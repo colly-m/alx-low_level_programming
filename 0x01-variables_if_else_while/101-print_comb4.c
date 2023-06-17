@@ -14,13 +14,16 @@ int main(void)
 		{
 			for (m = 50; m < 58; m++)
 			{
-				putchar(n);
-				putchar(i);
-				putchar(m);
-				if (n != 55 || m != 56)
+				if (m > i && i > n)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(n);
+					putchar(i);
+					putchar(m);
+					if (n != 55 || m != 56)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
