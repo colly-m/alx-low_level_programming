@@ -6,19 +6,19 @@
  */
 int main(void)
 {
-	int n, i, m;
+	int n, m, i;
 
 	for (n = 48; n < 58; n++)
 	{
-		for (i = 49; i < 58; i++)
+		for (m = 49; m < 58; m++)
 		{
-			for (m = 50; m < 58; m++)
+			for (i = 50; i < 58; i++)
 			{
-				if (m > i && i > n)
+				if (i > m && m > n)
 				{
 					putchar(n);
-					putchar(i);
 					putchar(m);
+					putchar(i);
 					if (n != 55 || m != 56)
 					{
 						putchar(',');
