@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main - print first 52 fibonacci numbers starting with 1 and 2
+ *main - prints the first 52 fibonacci numbers
  *Return: Nothing!
  */
 int main(void)
