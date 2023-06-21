@@ -5,23 +5,21 @@
  */
 int main(void)
 {
-	int i = 0;
-	long j = 1, k = 2;
+	int count;
+	long i = 0, j = 1, sum;
 
-	while (i < 50)
+	for (count = 0; count < 50; count++)
 	{
-		if (i == 0)
-		printf("%ld", j);
-		else if (i == 1)
-		printf(", %ld", k);
+		sun = i + j
+		printf("%ld", sum);
+
+		i = j;
+		j = sum;
+
+		if (count == 49)
+			printf("\n");
 		else
-		{
-		k += j;
-		j = k - j;
-		printf("' %ld", k);
-		}
-		++i;
+			printf(",");
 	}
-	printf("\n");
 	return (0);
 }
