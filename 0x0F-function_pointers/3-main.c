@@ -16,7 +16,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Errror\n");
+		printf("Error\n");
 		exit(98);
 	}
 
