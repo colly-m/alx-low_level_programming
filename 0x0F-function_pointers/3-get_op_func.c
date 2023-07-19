@@ -4,9 +4,9 @@
 /**
  * get_op_func - function to select the correct function to perform
  * operation asked by user
- * @s: operater passed as argument to program
- * Return: pointer to funtion corresponding to operater given as
- * a param
+ * @s: operator passed as argument to program
+ * Return: pointer to funtion corresponding to operator given as
+ * a parameter
  */
 int (*get_op_func(char *s))(int, int)
 {
