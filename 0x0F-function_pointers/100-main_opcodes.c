@@ -7,11 +7,11 @@
  * @argv: array of pointers to the argument
  * Return: 0 always
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int bytes, index;
-	unsigned char opcode;
 	int (*address)(int, char **) = main;
+	unsigned char opcode;
 
 	if (argc != 2)
 	{
@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 
 	if (bytes < 0)
 	{
-		printf("Erroe\n");
+		printf("Error\n");
 		exit(2);
 	}
 
