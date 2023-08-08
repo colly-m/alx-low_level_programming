@@ -9,24 +9,21 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fn, wt, count;
+	int fn, wt = 1, count = 0;
 
 	if (filename == NULL)
 		return (-1);
 	fn = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	if (fn == -1)
 		return (-1);
-	if (text_content != NULL)
+	if (text_content)
 	{
-		close(fn);
-		return (1);
+		while (text_content[count])
+		count++;
+		wt = write(fn, text_content, count);
 	}
-	for (count = 0; text_content[count] != '\0'; count++)
-		;
 
-	wt = write(fn, text_content, count);
-
-	if (wt < 1)
+	if (wt == -1)
 		return (-1);
 
 	close(fn);
