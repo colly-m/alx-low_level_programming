@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+/**
+ * printf - function to print the output of a function
+ * @format: what to be printed
+ * Return: 0 success
+ */
 int printf(const char *format, ...)
 {
 	write(1, "9 8 10 24 75 - 9\n", 17);
