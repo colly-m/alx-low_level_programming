@@ -11,11 +11,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 	hash_table_t *n_table;
 	unsigned long int u;
 
-	if (size < 1)
-	{
-		return (NULL);
-	}
-
 	n_table = malloc(sizeof(hash_node_t));
 	if (n_table == NULL)
 	{
