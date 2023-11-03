@@ -16,17 +16,16 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 	}
 
-	n_table = (hash_table_t *)malloc(sizeof(hash_node_t *) * size);
+	n_table = malloc(sizeof(hash_node_t));
 	if (n_table == NULL)
 	{
 		return (NULL);
 	}
 
 	n_table->size = size;
-	n_table->array = (hash_node_t **)malloc(sizeof(hash_node_t *) * size);
+	n_table->array = malloc(sizeof(hash_node_t *) * size);
 	if (n_table->array == NULL)
 	{
-		free(n_table);
 		return (NULL);
 	}
 
